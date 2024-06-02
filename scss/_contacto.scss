@@ -1,0 +1,105 @@
+html{
+    body{
+        main{
+            .contenedor{
+                display: flex;
+                justify-content: space-evenly;
+                @include mobile {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                @include desktop {
+                    flex-direction: row;
+                    justify-content:space-evenly;
+                }
+                .formulario{
+                    form{
+                        label{
+                            color: white;
+                            font-size: 1.6rem;
+                            font-family: "Roboto", sans-serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            margin-left: 2rem;
+                        }
+                        input {
+                            @include mobile{
+                                display: block;
+                                margin-left: 2rem;
+                                margin-bottom: 1rem;
+                                margin-top: 1rem;
+                                padding: 0.5rem;
+                                width: 25rem;
+                            }
+                            @include tablet {
+                                display: block;
+                                margin-left: 2rem;
+                                margin-bottom: 1rem;
+                                margin-top: 1rem;
+                                padding: 0.5rem;
+                                width: 25rem;
+                            }
+                            @include desktop {
+                                display: block;
+                                margin-left: 2rem;
+                                margin-bottom: 1rem;
+                                margin-top: 1rem;
+                                padding: 0.5rem;
+                                width: 30rem;
+                            }
+                        }
+                        textarea {
+                            @include mobile {
+                                display: block;
+                                margin-left: 2rem;
+                                margin-top: 1rem;
+                                width: 25rem;
+                            }
+                            @include tablet {
+                                display: block;
+                                margin-left: 2rem;
+                                margin-top: 1rem;
+                                width: 25rem;
+                            }
+                            @include desktop {
+                                display: block;
+                                margin-left: 2rem;
+                                margin-top: 1rem;
+                                width: 30rem;
+                            }
+                        }
+                        .btm-enviar {
+                            margin: 2rem;
+                            padding: 0.5rem 3rem 0.5rem 3rem;
+                            background-color: #FFAB00;
+                            border-radius: 5%;
+                            font-size: 1.6rem;
+                            font-family: "Roboto", sans-serif;
+                            font-weight: 300;
+                            font-style: normal;
+                            color:#333333;
+                        }
+                    }
+                }
+                .mapa{
+                    .maps{
+                        border-radius: 2%;
+                        padding-bottom: 10rem;
+                        @include mobile {
+                            width: 25rem;
+                            padding-top: 5rem;
+                        }
+                        @include tablet {
+                            width: 30rem;
+                            padding-top: 5rem;
+                        }
+                        @include desktop {
+                            border-radius: 2%;
+                            padding-bottom: 10rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

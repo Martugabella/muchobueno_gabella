@@ -1,0 +1,178 @@
+html {
+    body{
+        main{
+            .img-galeria{
+                .fila-1 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    @include mobile {
+                        flex-wrap: wrap;
+                        img {
+                            width: 15rem;
+                            height: 15rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    @include tablet {
+                            flex-wrap: wrap;
+                            margin-left: 6rem;
+                            margin-right: 6rem;
+                            img {
+                                width: 30rem;
+                                height: 30rem;
+                                margin-bottom: 1.5rem;
+                            }
+                        }
+                    @include desktop {
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        margin: 2rem;
+                        img {
+                            width: 25rem;
+                            height: 25rem;
+                            padding: 0.5rem;
+                            margin-bottom: 0.25rem;
+                        }
+                    }
+                }
+                .fila-2 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    @include mobile{
+                        flex-wrap: wrap;
+                        img {
+                            width: 15rem;
+                            height: 15rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    @include tablet {
+                        flex-wrap: wrap;
+                        margin-left: 6rem;
+                        margin-right: 6rem;
+                        img {
+                            width: 30rem;
+                            height: 30rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    @include desktop {
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        margin: 2rem;
+                        img {
+                            width: 25rem;
+                            height: 25rem;
+                            padding: 0.5rem;
+                            margin-bottom: 0.25rem;
+                        }
+                    }
+                }
+                .fila-3 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    @include mobile {
+                        flex-wrap: wrap;
+                        img {
+                            width: 15rem;
+                            height: 15rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    @include tablet {
+                        flex-wrap: wrap;
+                        margin-left: 6rem;
+                        margin-right: 6rem;
+                        img {
+                            width: 30rem;
+                            height: 30rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    @include desktop {
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        margin: 2rem;
+                        img {
+                            width: 25rem;
+                            height: 25rem;
+                            padding: 0.5rem;
+                            margin-bottom: 0.25rem;
+                        }
+                    }
+                }
+                .fila-4 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    @include mobile {
+                        flex-wrap: wrap;
+                        img {
+                            width: 15rem;
+                            height: 15rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    @include tablet {
+                        flex-wrap: wrap;
+                        margin-left: 6rem;
+                        margin-right: 6rem;
+                        img {
+                            width: 30rem;
+                            height: 30rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    @include desktop {
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        margin: 2rem;
+                        img {
+                            width: 25rem;
+                            height: 25rem;
+                            padding: 0.5rem;
+                            margin-bottom: 0.25rem;
+                        }
+                    }
+                }
+                .fila-5 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    @include mobile {
+                        flex-wrap: wrap;
+                        img {
+                            width: 15rem;
+                            height: 15rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    @include tablet {
+                        flex-wrap: wrap;
+                        margin-left: 6rem;
+                        margin-right: 6rem;
+                        img {
+                            width: 30rem;
+                            height: 30rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    @include desktop {
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        margin: 2rem;
+                        img {
+                            width: 25rem;
+                            height: 25rem;
+                            padding: 0.5rem;
+                            margin-bottom: 0.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

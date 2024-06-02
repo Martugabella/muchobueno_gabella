@@ -1,0 +1,233 @@
+html{
+    body{
+        main{
+            .grid-container{
+                    display: grid;
+                    grid-column-gap: 1.5rem;
+                    grid-row-gap: 1.5rem;
+                    @include mobile {
+                        justify-items: center;
+                        align-items: center;
+                        grid-template-columns: 20rem;
+                        grid-template-rows: 40rem 25rem 40rem 25rem;
+                        grid-template-areas: 
+                            "card-fer"
+                            "txt-fer"
+                            "card-facu"
+                            "txt-facu";
+                        padding: 6rem;
+                    }
+                    @include tablet {
+                        grid-template-columns: repeat(4, 17rem);
+                        grid-template-rows: 45rem 20rem 10rem;
+                        grid-template-areas: 
+                            "card-fer card-fer card-facu card-facu" 
+                            "txt-fer txt-fer txt-facu txt-facu" 
+                            "foto1 foto2 foto3 foto4";
+                        padding: 2rem;
+                    }
+                    @include desktop{
+                        align-items: center;
+                        grid-template-columns: repeat(4, 23rem);
+                        grid-template-rows: repeat(5, 27rem);
+                        grid-template-areas: 
+                            "card-fer card-fer foto1 foto2"
+                            "card-fer card-fer foto3 foto4"
+                            "txt-fer txt-fer txt-facu txt-facu"
+                            "foto5 foto6 card-facu card-facu"
+                            "foto7 foto8 card-facu card-facu";
+                            padding-left: 2rem;
+                            padding-right: 2rem;
+                            padding-top: 2rem;
+                            padding-bottom: 5rem;
+                    }
+                    .grid-cardfer {
+                        grid-area: card-fer;
+                        img {
+                            border-radius: 2%;
+                            @include mobile {
+                                width: 30rem;
+                            }
+                            @include tablet {
+                                width: 35rem;
+                            }
+                            @include desktop {
+                                height: 61rem;
+                            }
+                        }
+                    }
+                    .grid-txtfer {
+                        grid-area: txt-fer;
+                        .txt-card {
+                            color: white;
+                            font-size: 1.6rem;
+                            font-family: "Roboto", sans-serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            @include desktop {
+                                margin-left: 5rem;
+                                margin-right: 5rem;
+                            }
+                        }
+                    }
+                    .grid-img1{
+                        grid-area: foto1;
+                        width: 100%;
+                        border-radius: 2%;
+                        @include mobile {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                    }
+                    .grid-img2{
+                        grid-area: foto2;
+                        width: 100%;
+                        border-radius: 2%;
+                        @include mobile {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                    }
+                    .grid-img3{
+                        grid-area: foto3;
+                        width: 100%;
+                        border-radius: 2%;
+                        @include mobile {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                    }
+                    .grid-img4{
+                        grid-area: foto4;
+                        width: 100%;
+                        border-radius: 2%;
+                        @include mobile {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                    }
+                    .grid-img5{
+                        grid-area: foto5;
+                        width: 100%;
+                        border-radius: 2%;
+                        @include mobile {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include tablet {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                    }
+                    .grid-img6{
+                        grid-area: foto6;
+                        width: 100%;
+                        border-radius: 2%;
+                        @include mobile {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include tablet {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                    }
+                    .grid-img7{
+                        grid-area: foto7;
+                        width: 100%;
+                        border-radius: 2%;
+                        @include mobile {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include tablet {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                    }
+                    .grid-img8{
+                        grid-area: foto8;
+                        width: 100%;
+                        border-radius: 2%;
+                        @include mobile {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include tablet {
+                            visibility: hidden;
+                            width: 1px;
+                            height: 1px;
+                        }
+                        @include desktop {
+                            width: 100%;
+                        }
+                    }
+                    .grid-cardfacu {
+                        grid-area: card-facu;
+                        img{
+                            border-radius: 2%;
+                            @include mobile {
+                                width: 30rem;
+                            }
+                            @include tablet {
+                                width: 35rem;
+                            }
+                            @include desktop {
+                                height: 61rem;
+                            }
+                        }
+                    }
+                    .grid-txtfacu {
+                        grid-area: txt-facu;
+                            .txt-card {
+                                color: white;
+                                font-size: 1.6rem;
+                                font-family: "Roboto", sans-serif;
+                                font-weight: 400;
+                                font-style: normal;
+                                @include desktop {
+                                    margin-left: 5rem;
+                                    margin-right: 5rem;
+                                }
+                            }
+                        }
+                    .grid-img{
+                        width: 100%;
+                        border-radius: 2%;
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,54 @@
+html{
+    body{
+        .disenio{
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .imagen-disenio{
+                    .img-disenio {
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                        border-radius: 2%;
+                        @include mobile {
+                            height: 38rem;
+                            width: auto;
+                            margin: 1rem;
+                            border-radius: 2%;
+                        }
+                        }
+                    }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    .tit-disenio{
+                        text-align: center;
+                        text-transform: uppercase;
+                        
+                    }
+                    .txt-disenio{
+                        text-align: left;
+                        color: white;
+                        font-size: 1.6rem;
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        margin-bottom: 5rem;
+                        @include mobile {
+                            padding: 2rem;
+                        }
+                        @include tablet {
+                            padding-left: 5rem;
+                            padding-top: 1rem;
+                            padding-right: 5rem;
+                            padding-bottom: 5rem;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+
